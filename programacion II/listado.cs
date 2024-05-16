@@ -31,7 +31,7 @@ namespace programacionFE
 
 
 
-            decimal verificacion;
+            long verificacion;
 
 
 
@@ -45,9 +45,9 @@ namespace programacionFE
             else
             {
                 errorProvider1.SetError (txtDni, "");
-                if (!Decimal.TryParse(txtDni.Text, out verificacion))
+                if (!long.TryParse(txtDni.Text, out verificacion))
                 {
-                    errorProvider1.SetError(txtDni, "ingrese numeros");
+                    errorProvider1.SetError(txtDni, "ingrese DNI sin puntos");
                     return;
                 }
                 else

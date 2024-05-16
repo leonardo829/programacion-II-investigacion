@@ -39,6 +39,7 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblLineas = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -116,8 +117,12 @@
             "74",
             "24",
             "17",
-            "40"});
-            this.listBox1.Location = new System.Drawing.Point(91, 42);
+            "40",
+            "72",
+            "20",
+            "44",
+            "52"});
+            this.listBox1.Location = new System.Drawing.Point(96, 62);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(206, 124);
             this.listBox1.TabIndex = 8;
@@ -125,18 +130,28 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(91, 246);
+            this.dataGridView1.Location = new System.Drawing.Point(75, 246);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(639, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(655, 192);
             this.dataGridView1.TabIndex = 9;
+            // 
+            // lblLineas
+            // 
+            this.lblLineas.AutoSize = true;
+            this.lblLineas.Location = new System.Drawing.Point(92, 39);
+            this.lblLineas.Name = "lblLineas";
+            this.lblLineas.Size = new System.Drawing.Size(56, 20);
+            this.lblLineas.TabIndex = 10;
+            this.lblLineas.Text = "Lineas";
             // 
             // listado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 472);
+            this.Controls.Add(this.lblLineas);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.txtApellido);
@@ -166,6 +181,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblLineas;
     }
 }
 
